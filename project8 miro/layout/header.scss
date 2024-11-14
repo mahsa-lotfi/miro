@@ -1,0 +1,191 @@
+@import "../sass-utils/mixins.scss";
+@import "../base/typography.scss";
+@mixin hovertype{
+    background-color: #f3f3f2;
+    text-decoration: underline;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    font-family: $font1;
+    font-weight: 300;
+    background-color: white;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    img{
+        width: 120px;
+        height: 40px;
+    }
+    .miro__logo{
+        margin-left: 30px;
+    }
+    ul{
+        display: flex;
+        li{
+            padding: 7px;
+            list-style-type: none;
+            border-radius: 5px;
+            transition-duration: 0.3s;
+            @include centers();
+            div{
+                background-color: white;
+            }
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+        .dropdown__1{
+            position: relative;
+            .dropdown__miro--total{
+                background-color: white;
+            }
+            .dropdown__miro{
+                display: none;
+                position: absolute;
+                margin: 360px 0px 0px -130px;
+                line-height: 35px;
+                border-radius: 15px;
+                li{
+                    padding: 5px 0px;
+                    width: 240px;
+                }
+            }
+        }  
+        .dropdown__2{
+            position: relative;
+            .dropdown__solu{
+                display: none;
+                position: absolute;
+                margin: 390px 0px 0px -40px;
+                line-height: 35px;
+                border-radius: 15px;
+                li{
+                    padding: 5px 20px;
+                    width: 250px;
+                }
+            }
+        }  
+        .dropdown__3{
+            position: relative;
+            .dropdown__res{
+                display: none;
+                position: absolute;
+                margin: 330px 0px 0px -40px;
+                line-height: 35px;
+                border-radius: 15px;
+                li{
+                    padding: 5px 20px;
+                    width: 250px;
+                }
+            }
+        }
+        .dropdown__4{
+            position: relative;
+            .dropdown__ent{
+                display: none;
+                position: absolute;
+                margin: 247px 0px 0px -40px;
+                line-height: 35px;
+                border-radius: 15px;
+                li{
+                    padding: 5px 20px;
+                    width: 250px;
+                }
+            }
+        }
+    }
+    /*do not define the hover inside the related block*/
+    .dropdown__1:hover{
+        @include hovertype();
+    }
+    .dropdown__2:hover{
+        @include hovertype();
+    }
+    .dropdown__3:hover{
+        @include hovertype();
+    }
+    .dropdown__4:hover{
+        @include hovertype();
+    }
+    .dropdown__miro:hover{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    .dropdown__miro li:hover{
+        @include hovertype();
+    }
+    .dropdown__solu li:hover{
+        @include hovertype();
+    }
+    .dropdown__res li:hover{
+        @include hovertype();
+    }
+    .dropdown__ent li:hover{
+        @include hovertype();
+    }
+    .li__item{
+        margin-right: 10px;
+        padding: 7px;
+        border-radius: 5px;
+    }
+    .li__item:hover{
+        @include hovertype();
+    }
+    /*show when hover*/
+    .dropdown__1:hover .dropdown__miro{
+        display: block;
+    }
+    .dropdown__2:hover .dropdown__solu{
+        display: block;
+    }
+    .dropdown__3:hover .dropdown__res{
+        display: block;
+    }
+    .dropdown__4:hover .dropdown__ent{
+        display: block;
+    }
+    button{
+        height: 40px;
+        padding: 5px;
+        border: 1px solid rgb(28, 28, 30);
+        border-radius: 5px;
+        margin: 5px;
+        transition-duration: 0.3s;
+    }
+    .btn__login{
+        width: 60px;
+        background-color: white;
+        transition-duration: 0.3s;
+    }
+    .btn__login:hover{
+        background-color: black;
+        color: white;
+    }
+    .btn__sign{
+        width: 100px;
+        background-color: rgb(46, 77, 230);
+        color: white;
+        transition-duration: 0.3s;
+    }
+    .btn__sign:hover{
+        background-color: rgb(42, 66, 183);
+    }
+    div{
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        p:hover{
+            background-color: #f3f3f2;
+            text-decoration: underline;
+        }
+    }
+    .header__right{
+        display: flex;
+    }
+    
+}
+

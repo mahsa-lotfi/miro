@@ -1,0 +1,194 @@
+/*can't pay for the original font*/
+header {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Sora", sans-serif;
+  font-weight: 300;
+  background-color: white;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  /*do not define the hover inside the related block*/
+  /*show when hover*/
+}
+header img {
+  width: 120px;
+  height: 40px;
+}
+header .miro__logo {
+  margin-left: 30px;
+}
+header ul {
+  display: flex;
+}
+header ul li {
+  padding: 7px;
+  list-style-type: none;
+  border-radius: 5px;
+  transition-duration: 0.3s;
+  display: flex;
+  align-items: center;
+}
+header ul li div {
+  background-color: white;
+}
+header ul li img {
+  width: 20px;
+  height: 20px;
+}
+header ul .dropdown__1 {
+  position: relative;
+}
+header ul .dropdown__1 .dropdown__miro--total {
+  background-color: white;
+}
+header ul .dropdown__1 .dropdown__miro {
+  display: none;
+  position: absolute;
+  margin: 360px 0px 0px -130px;
+  line-height: 35px;
+  border-radius: 15px;
+}
+header ul .dropdown__1 .dropdown__miro li {
+  padding: 5px 0px;
+  width: 240px;
+}
+header ul .dropdown__2 {
+  position: relative;
+}
+header ul .dropdown__2 .dropdown__solu {
+  display: none;
+  position: absolute;
+  margin: 390px 0px 0px -40px;
+  line-height: 35px;
+  border-radius: 15px;
+}
+header ul .dropdown__2 .dropdown__solu li {
+  padding: 5px 20px;
+  width: 250px;
+}
+header ul .dropdown__3 {
+  position: relative;
+}
+header ul .dropdown__3 .dropdown__res {
+  display: none;
+  position: absolute;
+  margin: 330px 0px 0px -40px;
+  line-height: 35px;
+  border-radius: 15px;
+}
+header ul .dropdown__3 .dropdown__res li {
+  padding: 5px 20px;
+  width: 250px;
+}
+header ul .dropdown__4 {
+  position: relative;
+}
+header ul .dropdown__4 .dropdown__ent {
+  display: none;
+  position: absolute;
+  margin: 247px 0px 0px -40px;
+  line-height: 35px;
+  border-radius: 15px;
+}
+header ul .dropdown__4 .dropdown__ent li {
+  padding: 5px 20px;
+  width: 250px;
+}
+header .dropdown__1:hover {
+  background-color: #f3f3f2;
+  text-decoration: underline;
+}
+header .dropdown__2:hover {
+  background-color: #f3f3f2;
+  text-decoration: underline;
+}
+header .dropdown__3:hover {
+  background-color: #f3f3f2;
+  text-decoration: underline;
+}
+header .dropdown__4:hover {
+  background-color: #f3f3f2;
+  text-decoration: underline;
+}
+header .dropdown__miro:hover {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+header .dropdown__miro li:hover {
+  background-color: #f3f3f2;
+  text-decoration: underline;
+}
+header .dropdown__solu li:hover {
+  background-color: #f3f3f2;
+  text-decoration: underline;
+}
+header .dropdown__res li:hover {
+  background-color: #f3f3f2;
+  text-decoration: underline;
+}
+header .dropdown__ent li:hover {
+  background-color: #f3f3f2;
+  text-decoration: underline;
+}
+header .li__item {
+  margin-right: 10px;
+  padding: 7px;
+  border-radius: 5px;
+}
+header .li__item:hover {
+  background-color: #f3f3f2;
+  text-decoration: underline;
+}
+header .dropdown__1:hover .dropdown__miro {
+  display: block;
+}
+header .dropdown__2:hover .dropdown__solu {
+  display: block;
+}
+header .dropdown__3:hover .dropdown__res {
+  display: block;
+}
+header .dropdown__4:hover .dropdown__ent {
+  display: block;
+}
+header button {
+  height: 40px;
+  padding: 5px;
+  border: 1px solid rgb(28, 28, 30);
+  border-radius: 5px;
+  margin: 5px;
+  transition-duration: 0.3s;
+}
+header .btn__login {
+  width: 60px;
+  background-color: white;
+  transition-duration: 0.3s;
+}
+header .btn__login:hover {
+  background-color: black;
+  color: white;
+}
+header .btn__sign {
+  width: 100px;
+  background-color: rgb(46, 77, 230);
+  color: white;
+  transition-duration: 0.3s;
+}
+header .btn__sign:hover {
+  background-color: rgb(42, 66, 183);
+}
+header div {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+}
+header div p:hover {
+  background-color: #f3f3f2;
+  text-decoration: underline;
+}
+header .header__right {
+  display: flex;
+}/*# sourceMappingURL=header.css.map */
